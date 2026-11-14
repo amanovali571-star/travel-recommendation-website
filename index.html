@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TravelBloom - Travel Recommendations</title>
+  <link rel="stylesheet" href="./travel_recommendation.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<nav>
+  <h1>TravelBloom</h1>
+  <ul>
+    <li><a href="./index.html" id="home">Home</a></li>
+    <li><a href="./about.html" id="about">About Us</a></li>
+    <li><a href="./contact.html" id="contact">Contact Us</a></li>
+    <li><input type="text" id="destinationInput" placeholder="Enter a destination or keyword"></li>
+    <li><button id="btnSearch">Search</button></li>
+    <li><button id="btnclear">Clear</button></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <div class="sidebar">   
+    <aside>
+      <section id="facebook"><a href="#" class="fa fa-facebook"></a></section>
+      <section id="twitter"><a href="#" class="fa fa-twitter"></a></section>
+      <section id="google"><a href="#" class="fa fa-google"></a></section>
+      <section id="instagram"><a href="#" class="fa fa-instagram"></a></section>
+    </aside>
+  </div>
+    
+  <div class="analysisForm">
+    <div id="content">
+      <h1>Explore Dream Destinations</h1>
+      <br>
+      <h3>Welcome to TravelBloom! We provide world-class travel recommendations for beautiful beaches, historic temples, and vibrant countries around the globe. It encourages exploration of uncharted territories and unforgettable adventures.</h3>
+      <br>
+      <button id="bookNow">Book Now</button>
+    </div>
+    <div id="result" class="card-container" style="float: right;"></div>
+  </div>
+</div>
+
+<script src="./travel_recommendation.js"></script>
+</body>
+</html>
