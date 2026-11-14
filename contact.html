@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us - TravelBloom</title>
+  <link rel="stylesheet" href="./travel_recommendation.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    #contactForm {
+      max-width: 500px;
+      margin: 20px 0;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 24px;
+      border-radius: 8px;
+    }
+    #contactForm label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #fff;
+    }
+    #contactForm input,
+    #contactForm textarea {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      font-size: 1rem;
+    }
+    #contactForm button {
+      padding: 12px 24px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+    #contactForm button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <h1>TravelBloom</h1>
+  <ul>
+    <li><a href="./index.html" id="home">Home</a></li>
+    <li><a href="./about.html" id="about">About Us</a></li>
+    <li><a href="./contact.html" id="contact">Contact Us</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <div class="sidebar">   
+    <aside>
+      <section id="facebook"><a href="#" class="fa fa-facebook"></a></section>
+      <section id="twitter"><a href="#" class="fa fa-twitter"></a></section>
+      <section id="google"><a href="#" class="fa fa-google"></a></section>
+      <section id="instagram"><a href="#" class="fa fa-instagram"></a></section>
+    </aside>
+  </div>
+  <div class="analysisForm">
+    <h1>Contact Us</h1>
+    <p style="font-weight: bold; font-size: 1.1rem;">Get in touch with our travel team! We would love to assist you with your next dream vacation.</p>
+    
+    <div style="margin: 15px 0; color: #fff; line-height: 1.6;">
+      <p><strong>Email:</strong> support@travelbloom.com | inquiries@travelbloom.com</p>
+      <p><strong>Phone:</strong> +1 (800) 555-BLOOM / +1 (800) 555-0199</p>
+      <p><strong>Headquarters:</strong> 100 Innovation Way, Suite 400, New York, NY 10001, USA</p>
+    </div>
+
+    <form id="contactForm" onsubmit="event.preventDefault(); alert('Thank you for contacting TravelBloom! Our team will get back to you shortly.'); this.reset();">
+      <div>
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      </div>
+      <div>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="How can we help you plan your journey?" required></textarea>
+      </div>
+      <button type="submit" id="submitBtn">Send Message</button>
+    </form>
+  </div>
+</div>
+<script src="./travel_recommendation.js"></script>
+</body>
+</html>
